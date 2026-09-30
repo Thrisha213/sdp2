@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #667eea;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4c5fd5;
+
+    transform: translateY(-2px);
+}
+
+#displayEvent {
+    font-size: 30px;
+
+    color: #333;
+
+    margin-bottom: 25px;
+}
+
+.countdown {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.box {
+    padding: 25px 10px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    color: white;
+}
+
+.box span {
+    display: block;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 15px;
+
+    text-transform: uppercase;
+}
+
+#message {
+    margin-top: 25px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #667eea;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box span {
+        font-size: 32px;
+    }
+}
